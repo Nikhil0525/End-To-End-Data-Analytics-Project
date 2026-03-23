@@ -1,15 +1,31 @@
 -- Total Sales
-SELECT SUM(sales) AS total_sales FROM dataset;
+SELECT SUM(Sales) AS Total_Sales FROM sales_data;
+
+-- Total Profit
+SELECT SUM(Profit) AS Total_Profit FROM sales_data;
 
 -- Top 5 Customers
-SELECT customer_name, SUM(sales) AS total_sales
-FROM dataset
-GROUP BY customer_name
-ORDER BY total_sales DESC
+SELECT Customer_Name, SUM(Sales) AS Total_Sales
+FROM sales_data
+GROUP BY Customer_Name
+ORDER BY Total_Sales DESC
 LIMIT 5;
 
--- Monthly Revenue
-SELECT MONTH(order_date) AS month, SUM(sales) AS revenue
-FROM dataset
-GROUP BY MONTH(order_date)
-ORDER BY month;
+-- Monthly Sales Trend
+SELECT MONTH(Order_Date) AS Month, SUM(Sales) AS Revenue
+FROM sales_data
+GROUP BY MONTH(Order_Date)
+ORDER BY Month;
+
+-- Region-wise Sales
+SELECT Region, SUM(Sales) AS Total_Sales
+FROM sales_data
+GROUP BY Region
+ORDER BY Total_Sales DESC;
+
+-- Top Products
+SELECT Product_Name, SUM(Sales) AS Total_Sales
+FROM sales_data
+GROUP BY Product_Name
+ORDER BY Total_Sales DESC
+LIMIT 5;
