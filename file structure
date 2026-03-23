@@ -1,18 +1,30 @@
 End-To-End-Data-Analytics-Project/
 │
 ├── data/
-│   └── dataset.csv
+│ └── sales_data.csv
 │
 ├── sql/
-│   └── queries.sql
+│ └── queries.sql
 │
 ├── python/
-│   └── analysis.py
-│
-├── powerbi/
-│   └── dashboard.pbix
+│ └── analysis.py
 │
 ├── images/
-│   └── dashboard.png
+│ └── dashboard.png
 │
 └── README.md
+
+---
+
+## 📊 Dashboard
+![Dashboard](images/dashboard.png)
+
+---
+
+## 🚀 Conclusion
+This project demonstrates end-to-end data analytics workflow from data cleaning to visualization and business insights generation.
+
+---
+
+## 👤 Author
+Sai Nikhil
